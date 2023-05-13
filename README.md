@@ -1,4 +1,4 @@
-# continuous_time
+# Continuous Time Models
 
 ## Creating a conda environment:
 `conda create -n continuous_time  python=3.9`
