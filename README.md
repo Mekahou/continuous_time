@@ -1,10 +1,10 @@
 # Continuous Time Models
 
-## Creating a conda environment:
+### Creating a conda environment:
 `conda create -n continuous_time  python=3.9`
-### Activating the environment:
+#### Activating the environment:
 `conda activate continuous_time` 
-### Installing the packages required to run this repository
+#### Installing the packages required to run this repository:
 `pip install -r requirements.txt`
 
 
