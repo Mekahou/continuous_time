@@ -1,0 +1,23 @@
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from torch.utils.data import Dataset, DataLoader
+import matplotlib.pyplot as plt
+from matplotlib import cm
+
+class Params:
+    def __init__(self,
+                 sigma = 1.0, # log utility function, focussing on CRRA
+                 rho = 0.03, #discount factor
+                 alpha = 1.0/3.0, #Cobb-Douglas coffeficient
+                 z = 1.0, # tfp
+                 w = 1.0, # fixed wage
+                 a_0 = 0.0001, # initial asset holding a(0) 
+                ):
+        self.sigma = sigma # log utility function
+        self.rho = rho # discount factor
+        self.alpha = alpha # Cobb-Douglas coffeficient
+        self.z = z # tfp
+        self.w = w # fixed wage
+        self.a_0 = a_0 # initial asset holding a(0) 
