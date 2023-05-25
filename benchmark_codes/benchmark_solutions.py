@@ -49,5 +49,5 @@ class Benchmark_deterministic:
         initial_guess = 1*np.ones((2, t_grid.size)) # an initial guess for the solution, the results are very sensetive to this coice
         self.solution_path = solve_bvp(dynamic, bc, t_grid, initial_guess) # Solving the boundary value problem
 
-        self.a_path = self.solution_path.sol(t_grid)[0]
-        self.c_path = self.solution_path.sol(t_grid)[1]
+        self.a_path = self.solution_path.sol(t_grid)[0] #generates the path for a
+        self.c_path = self.solution_path.sol(t_grid)[1] # generates the path for c
